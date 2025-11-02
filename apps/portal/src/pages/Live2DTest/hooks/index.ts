@@ -1,0 +1,1 @@
+export { useMouth } from './useMouth';

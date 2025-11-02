@@ -1,0 +1,915 @@
+{
+	"Version": 3,
+	"Parameters": [
+		{
+			"Id": "ParamAngleX",
+			"GroupId": "ParamGroupFace",
+			"Name": "角度 X"
+		},
+		{
+			"Id": "ParamAngleY",
+			"GroupId": "ParamGroupFace",
+			"Name": "角度 Y"
+		},
+		{
+			"Id": "ParamAngleZ",
+			"GroupId": "ParamGroupFace",
+			"Name": "角度 Z"
+		},
+		{
+			"Id": "ParamCheek",
+			"GroupId": "ParamGroupFace",
+			"Name": "害羞"
+		},
+		{
+			"Id": "ParamFaceInkOn",
+			"GroupId": "ParamGroupFace",
+			"Name": "脸部墨水 显示"
+		},
+		{
+			"Id": "ParamEyeLOpen",
+			"GroupId": "ParamGroupEyes",
+			"Name": "左眼 开闭"
+		},
+		{
+			"Id": "ParamEyeLSmile",
+			"GroupId": "ParamGroupEyes",
+			"Name": "左眼 笑容"
+		},
+		{
+			"Id": "ParamEyeLForm",
+			"GroupId": "ParamGroupEyes",
+			"Name": "左眼 变形"
+		},
+		{
+			"Id": "ParamEyeROpen",
+			"GroupId": "ParamGroupEyes",
+			"Name": "右眼 开闭"
+		},
+		{
+			"Id": "ParamEyeRSmile",
+			"GroupId": "ParamGroupEyes",
+			"Name": "右眼 笑容"
+		},
+		{
+			"Id": "ParamEyeRForm",
+			"GroupId": "ParamGroupEyes",
+			"Name": "右眼 变形"
+		},
+		{
+			"Id": "ParamEyeBallX",
+			"GroupId": "ParamGroupEyeballs",
+			"Name": "眼球 X"
+		},
+		{
+			"Id": "ParamEyeBallY",
+			"GroupId": "ParamGroupEyeballs",
+			"Name": "眼球 Y"
+		},
+		{
+			"Id": "ParamEyeBallForm",
+			"GroupId": "ParamGroupEyeballs",
+			"Name": "眼球 缩小"
+		},
+		{
+			"Id": "ParamEyeEffect",
+			"GroupId": "ParamGroupEyeballs",
+			"Name": "眼睛 效果"
+		},
+		{
+			"Id": "ParamBrowLY",
+			"GroupId": "ParamGroupBrows",
+			"Name": "左眉 上下"
+		},
+		{
+			"Id": "ParamBrowRY",
+			"GroupId": "ParamGroupBrows",
+			"Name": "右眉 上下"
+		},
+		{
+			"Id": "ParamBrowLX",
+			"GroupId": "ParamGroupBrows",
+			"Name": "左眉 左右"
+		},
+		{
+			"Id": "ParamBrowRX",
+			"GroupId": "ParamGroupBrows",
+			"Name": "右眉 左右"
+		},
+		{
+			"Id": "ParamBrowLAngle",
+			"GroupId": "ParamGroupBrows",
+			"Name": "左眉 角度"
+		},
+		{
+			"Id": "ParamBrowRAngle",
+			"GroupId": "ParamGroupBrows",
+			"Name": "右眉 角度"
+		},
+		{
+			"Id": "ParamBrowLForm",
+			"GroupId": "ParamGroupBrows",
+			"Name": "左眉 变形"
+		},
+		{
+			"Id": "ParamBrowRForm",
+			"GroupId": "ParamGroupBrows",
+			"Name": "右眉 变形"
+		},
+		{
+			"Id": "ParamA",
+			"GroupId": "ParamGroupMouth",
+			"Name": "啊"
+		},
+		{
+			"Id": "ParamI",
+			"GroupId": "ParamGroupMouth",
+			"Name": "伊"
+		},
+		{
+			"Id": "ParamU",
+			"GroupId": "ParamGroupMouth",
+			"Name": "呜"
+		},
+		{
+			"Id": "ParamE",
+			"GroupId": "ParamGroupMouth",
+			"Name": "诶"
+		},
+		{
+			"Id": "ParamO",
+			"GroupId": "ParamGroupMouth",
+			"Name": "哦"
+		},
+		{
+			"Id": "ParamMouthUp",
+			"GroupId": "ParamGroupMouth",
+			"Name": "上扬嘴"
+		},
+		{
+			"Id": "ParamMouthDown",
+			"GroupId": "ParamGroupMouth",
+			"Name": "下垂嘴"
+		},
+		{
+			"Id": "ParamMouthAngry",
+			"GroupId": "ParamGroupMouth",
+			"Name": "撅嘴"
+		},
+		{
+			"Id": "ParamMouthAngryLine",
+			"GroupId": "ParamGroupMouth",
+			"Name": "撅嘴线"
+		},
+		{
+			"Id": "ParamBodyAngleX",
+			"GroupId": "ParamGroupBody",
+			"Name": "身体旋转 X"
+		},
+		{
+			"Id": "ParamBodyAngleY",
+			"GroupId": "ParamGroupBody",
+			"Name": "身体旋转 Y"
+		},
+		{
+			"Id": "ParamBodyAngleZ",
+			"GroupId": "ParamGroupBody",
+			"Name": "身体旋转 Z"
+		},
+		{
+			"Id": "ParamBreath",
+			"GroupId": "ParamGroupBody",
+			"Name": "呼吸"
+		},
+		{
+			"Id": "ParamLeftShoulderUp",
+			"GroupId": "ParamGroupBody",
+			"Name": "左肩的上下"
+		},
+		{
+			"Id": "ParamRightShoulderUp",
+			"GroupId": "ParamGroupBody",
+			"Name": "右肩的上下"
+		},
+		{
+			"Id": "ParamArmLA01",
+			"GroupId": "ParamGroupArmLA",
+			"Name": "左腕A 肩膀旋转"
+		},
+		{
+			"Id": "ParamArmLA02",
+			"GroupId": "ParamGroupArmLA",
+			"Name": "左腕A 肘部旋转"
+		},
+		{
+			"Id": "ParamArmLA03",
+			"GroupId": "ParamGroupArmLA",
+			"Name": "左腕A 手腕旋转"
+		},
+		{
+			"Id": "ParamHandLA",
+			"GroupId": "ParamGroupArmLA",
+			"Name": "左手A"
+		},
+		{
+			"Id": "ParamArmRA01",
+			"GroupId": "ParamGroupArmRA",
+			"Name": "右腕A 肩膀旋转"
+		},
+		{
+			"Id": "ParamArmRA02",
+			"GroupId": "ParamGroupArmRA",
+			"Name": "右腕A 肘部旋转"
+		},
+		{
+			"Id": "ParamArmRA03",
+			"GroupId": "ParamGroupArmRA",
+			"Name": "右腕A 手腕旋转"
+		},
+		{
+			"Id": "ParamWandRotate",
+			"GroupId": "ParamGroupArmRA",
+			"Name": "法杖旋转"
+		},
+		{
+			"Id": "ParamHandRA",
+			"GroupId": "ParamGroupArmRA",
+			"Name": "右手A"
+		},
+		{
+			"Id": "ParamInkDrop",
+			"GroupId": "ParamGroupArmRA",
+			"Name": "墨水滴落"
+		},
+		{
+			"Id": "ParamInkDropRotate",
+			"GroupId": "ParamGroupArmRA",
+			"Name": "墨水滴落 旋转"
+		},
+		{
+			"Id": "ParamInkDropOn",
+			"GroupId": "ParamGroupArmRA",
+			"Name": "墨水滴落 显示"
+		},
+		{
+			"Id": "ParamArmLB01",
+			"GroupId": "ParamGroupArmLB",
+			"Name": "左腕B 肩膀旋转"
+		},
+		{
+			"Id": "ParamArmLB02",
+			"GroupId": "ParamGroupArmLB",
+			"Name": "左腕B 肘部旋转"
+		},
+		{
+			"Id": "ParamArmLB03",
+			"GroupId": "ParamGroupArmLB",
+			"Name": "左腕B 手腕旋转"
+		},
+		{
+			"Id": "ParamHandLB",
+			"GroupId": "ParamGroupArmLB",
+			"Name": "左手B"
+		},
+		{
+			"Id": "ParamHatForm",
+			"GroupId": "ParamGroupArmLB",
+			"Name": "帽子的变形"
+		},
+		{
+			"Id": "ParamArmRB01",
+			"GroupId": "ParamGroupArmRB",
+			"Name": "右腕B 肩膀旋转"
+		},
+		{
+			"Id": "ParamArmRB02",
+			"GroupId": "ParamGroupArmRB",
+			"Name": "右腕B 肘部旋转"
+		},
+		{
+			"Id": "ParamArmRB02Y",
+			"GroupId": "ParamGroupArmRB",
+			"Name": "右腕B 手臂的Y"
+		},
+		{
+			"Id": "ParamArmRB03",
+			"GroupId": "ParamGroupArmRB",
+			"Name": "右腕B 手腕旋转"
+		},
+		{
+			"Id": "ParamHandRB",
+			"GroupId": "ParamGroupArmRB",
+			"Name": "右手B"
+		},
+		{
+			"Id": "ParamAllX",
+			"GroupId": "ParamGroupOverall",
+			"Name": "整体的移动 X"
+		},
+		{
+			"Id": "ParamAllY",
+			"GroupId": "ParamGroupOverall",
+			"Name": "整体的移动 Y"
+		},
+		{
+			"Id": "ParamAllRotate",
+			"GroupId": "ParamGroupOverall",
+			"Name": "整体的旋转"
+		},
+		{
+			"Id": "ParamHairFront",
+			"GroupId": "ParamGroupSway",
+			"Name": "头发晃动 前"
+		},
+		{
+			"Id": "ParamHairSideL",
+			"GroupId": "ParamGroupSway",
+			"Name": "头发晃动 左横"
+		},
+		{
+			"Id": "ParamHairSideR",
+			"GroupId": "ParamGroupSway",
+			"Name": "头发晃动 右横"
+		},
+		{
+			"Id": "ParamHairBack",
+			"GroupId": "ParamGroupSway",
+			"Name": "头发晃动 后"
+		},
+		{
+			"Id": "ParamHairBackR",
+			"GroupId": "ParamGroupSway",
+			"Name": "头发晃动 右后"
+		},
+		{
+			"Id": "ParamHairBackL",
+			"GroupId": "ParamGroupSway",
+			"Name": "头发晃动 左后"
+		},
+		{
+			"Id": "ParamoHairMesh",
+			"GroupId": "ParamGroupSway",
+			"Name": "网格的晃动"
+		},
+		{
+			"Id": "ParamHairFrontFuwa",
+			"GroupId": "ParamGroupSway",
+			"Name": "刘海 蓬松"
+		},
+		{
+			"Id": "ParamHairSideFuwa",
+			"GroupId": "ParamGroupSway",
+			"Name": "侧发 蓬松"
+		},
+		{
+			"Id": "ParamHairBackFuwa",
+			"GroupId": "ParamGroupSway",
+			"Name": "后发 蓬松"
+		},
+		{
+			"Id": "ParamWing",
+			"GroupId": "ParamGroupSway",
+			"Name": "翅膀的晃动"
+		},
+		{
+			"Id": "ParamRibbon",
+			"GroupId": "ParamGroupSway",
+			"Name": "帽子缎带的晃动"
+		},
+		{
+			"Id": "ParamHatBrim",
+			"GroupId": "ParamGroupSway",
+			"Name": "帽子帽檐的晃动"
+		},
+		{
+			"Id": "ParamHatTop",
+			"GroupId": "ParamGroupSway",
+			"Name": "帽子 上部的晃动"
+		},
+		{
+			"Id": "ParamAccessory1",
+			"GroupId": "ParamGroupSway",
+			"Name": "项链的晃动1"
+		},
+		{
+			"Id": "ParamAccessory2",
+			"GroupId": "ParamGroupSway",
+			"Name": "项链的晃动2"
+		},
+		{
+			"Id": "ParamString",
+			"GroupId": "ParamGroupSway",
+			"Name": "连帽衫绳子的晃动"
+		},
+		{
+			"Id": "ParamRobeL",
+			"GroupId": "ParamGroupSway",
+			"Name": "长袍的晃动 左"
+		},
+		{
+			"Id": "ParamRobeR",
+			"GroupId": "ParamGroupSway",
+			"Name": "长袍的晃动 右"
+		},
+		{
+			"Id": "ParamRobeFuwa",
+			"GroupId": "ParamGroupSway",
+			"Name": "长袍的蓬松"
+		},
+		{
+			"Id": "ParamHeartMissOn",
+			"GroupId": "ParamGroupHeart",
+			"Name": "爱心失败 显示"
+		},
+		{
+			"Id": "ParamHeartBackMissOn",
+			"GroupId": "ParamGroupHeart",
+			"Name": "爱心失败后方 显示"
+		},
+		{
+			"Id": "ParamHeartColorRainbow",
+			"GroupId": "ParamGroupHeart",
+			"Name": "爱心失败 彩虹色"
+		},
+		{
+			"Id": "ParamHeartHealOn",
+			"GroupId": "ParamGroupHeart",
+			"Name": "爱心恢复 显示"
+		},
+		{
+			"Id": "ParamHeartBackHealOn",
+			"GroupId": "ParamGroupHeart",
+			"Name": "爱心恢复后方 显示"
+		},
+		{
+			"Id": "ParamHeartColorHeal",
+			"GroupId": "ParamGroupHeart",
+			"Name": "爱心恢复 绿色"
+		},
+		{
+			"Id": "ParamHeartDrow",
+			"GroupId": "ParamGroupHeart",
+			"Name": "爱心 绘制"
+		},
+		{
+			"Id": "ParamHeartSize",
+			"GroupId": "ParamGroupHeart",
+			"Name": "爱心 缩放"
+		},
+		{
+			"Id": "ParamHeartColorLight",
+			"GroupId": "ParamGroupHeart",
+			"Name": "爱心 颜色变化"
+		},
+		{
+			"Id": "ParamWandInkColorRainbow",
+			"GroupId": "ParamGroupInk",
+			"Name": "法杖墨水 彩虹色"
+		},
+		{
+			"Id": "ParamWandInkColorHeal",
+			"GroupId": "ParamGroupInk",
+			"Name": "法杖墨水 绿色"
+		},
+		{
+			"Id": "ParamWandInk",
+			"GroupId": "ParamGroupInk",
+			"Name": "法杖墨水"
+		},
+		{
+			"Id": "ParamSmokeOn",
+			"GroupId": "ParamGroupExplosion",
+			"Name": "烟雾 显示"
+		},
+		{
+			"Id": "ParamSmoke",
+			"GroupId": "ParamGroupExplosion",
+			"Name": "烟雾"
+		},
+		{
+			"Id": "ParamExplosionChargeOn",
+			"GroupId": "ParamGroupExplosion",
+			"Name": "爆炸光聚集 显示"
+		},
+		{
+			"Id": "ParamExplosionLightCharge",
+			"GroupId": "ParamGroupExplosion",
+			"Name": "爆炸光聚集"
+		},
+		{
+			"Id": "ParamExplosionOn",
+			"GroupId": "ParamGroupExplosion",
+			"Name": "爆炸 显示"
+		},
+		{
+			"Id": "ParamExplosion",
+			"GroupId": "ParamGroupExplosion",
+			"Name": "爆炸"
+		},
+		{
+			"Id": "ParamRabbitElimination",
+			"GroupId": "ParamGroupRabbit",
+			"Name": "兔子 消失"
+		},
+		{
+			"Id": "ParamRabbitAppearance",
+			"GroupId": "ParamGroupRabbit",
+			"Name": "兔子 出现"
+		},
+		{
+			"Id": "ParamRabbitSize",
+			"GroupId": "ParamGroupRabbit",
+			"Name": "兔子 缩放"
+		},
+		{
+			"Id": "ParamRabbitDraworder",
+			"GroupId": "ParamGroupRabbit",
+			"Name": "兔子 绘制顺序"
+		},
+		{
+			"Id": "ParamRabbitEar",
+			"GroupId": "ParamGroupRabbit",
+			"Name": "兔子 耳朵"
+		},
+		{
+			"Id": "ParamRabbitDirection",
+			"GroupId": "ParamGroupRabbit",
+			"Name": "兔子 朝向"
+		},
+		{
+			"Id": "ParamRabbitLight",
+			"GroupId": "ParamGroupRabbit",
+			"Name": "兔子 颜色变化"
+		},
+		{
+			"Id": "ParamRabbitLightSize",
+			"GroupId": "ParamGroupRabbit",
+			"Name": "兔子光 缩放"
+		},
+		{
+			"Id": "ParamRabbitX",
+			"GroupId": "ParamGroupRabbit",
+			"Name": "兔子的移动 X"
+		},
+		{
+			"Id": "ParamRabbitY",
+			"GroupId": "ParamGroupRabbit",
+			"Name": "兔子的移动 Y"
+		},
+		{
+			"Id": "ParamRabbitRotate",
+			"GroupId": "ParamGroupRabbit",
+			"Name": "兔子的旋转"
+		},
+		{
+			"Id": "ParamAuraOn",
+			"GroupId": "ParamGroupAura",
+			"Name": "光环 显示"
+		},
+		{
+			"Id": "ParamAura",
+			"GroupId": "ParamGroupAura",
+			"Name": "光环"
+		},
+		{
+			"Id": "ParamAuraColor1",
+			"GroupId": "ParamGroupAura",
+			"Name": "光环 颜色变化1"
+		},
+		{
+			"Id": "ParamAuraColor2",
+			"GroupId": "ParamGroupAura",
+			"Name": "光环 颜色变化2"
+		},
+		{
+			"Id": "ParamHeartLightOn",
+			"GroupId": "ParamGroupLight",
+			"Name": "光 显示"
+		},
+		{
+			"Id": "ParamHeartLight",
+			"GroupId": "ParamGroupLight",
+			"Name": "光 星星"
+		},
+		{
+			"Id": "ParamHeartLightColor",
+			"GroupId": "ParamGroupLight",
+			"Name": "光 颜色变化"
+		},
+		{
+			"Id": "ParamHealLightOn",
+			"GroupId": "ParamGroupLight",
+			"Name": "恢复魔法光 显示"
+		},
+		{
+			"Id": "ParamHealLight",
+			"GroupId": "ParamGroupLight",
+			"Name": "恢复魔法光"
+		},
+		{
+			"Id": "ParamStrengthenLightOn",
+			"GroupId": "ParamGroupLight",
+			"Name": "强化魔法光 显示"
+		},
+		{
+			"Id": "ParamStrengthenLight",
+			"GroupId": "ParamGroupLight",
+			"Name": "强化魔法光"
+		},
+		{
+			"Id": "ParamStrengthenLightMove",
+			"GroupId": "ParamGroupLight",
+			"Name": "强化魔法光 移动"
+		},
+		{
+			"Id": "ParamMagicPositionX",
+			"GroupId": "ParamGroupAllEffects",
+			"Name": "魔法的位置X"
+		},
+		{
+			"Id": "ParamMagicPositionY",
+			"GroupId": "ParamGroupAllEffects",
+			"Name": "魔法的位置Y"
+		},
+		{
+			"Id": "ParamAllColor1",
+			"GroupId": "ParamGroupAllEffects",
+			"Name": "整体的颜色1"
+		},
+		{
+			"Id": "ParamAllColor2",
+			"GroupId": "ParamGroupAllEffects",
+			"Name": "整体的颜色2"
+		},
+		{
+			"Id": "ParamSphereOn",
+			"GroupId": "ParamGroupColorSample",
+			"Name": "球 显示"
+		},
+		{
+			"Id": "ParamSphereMove",
+			"GroupId": "ParamGroupColorSample",
+			"Name": "球 移动"
+		},
+		{
+			"Id": "ParamSphereMultiplyColor",
+			"GroupId": "ParamGroupColorSample",
+			"Name": "球 乘法色"
+		},
+		{
+			"Id": "ParamSphereScreenColor",
+			"GroupId": "ParamGroupColorSample",
+			"Name": "球 屏幕色"
+		}
+	],
+	"ParameterGroups": [
+		{
+			"Id": "ParamGroupFace",
+			"GroupId": "",
+			"Name": "脸"
+		},
+		{
+			"Id": "ParamGroupEyes",
+			"GroupId": "",
+			"Name": "眼睛"
+		},
+		{
+			"Id": "ParamGroupEyeballs",
+			"GroupId": "",
+			"Name": "眼球"
+		},
+		{
+			"Id": "ParamGroupBrows",
+			"GroupId": "",
+			"Name": "眉毛"
+		},
+		{
+			"Id": "ParamGroupMouth",
+			"GroupId": "",
+			"Name": "嘴"
+		},
+		{
+			"Id": "ParamGroupBody",
+			"GroupId": "",
+			"Name": "身体"
+		},
+		{
+			"Id": "ParamGroupArmLA",
+			"GroupId": "",
+			"Name": "左腕A"
+		},
+		{
+			"Id": "ParamGroupArmRA",
+			"GroupId": "",
+			"Name": "右腕A"
+		},
+		{
+			"Id": "ParamGroupArmLB",
+			"GroupId": "",
+			"Name": "左腕B"
+		},
+		{
+			"Id": "ParamGroupArmRB",
+			"GroupId": "",
+			"Name": "右腕B"
+		},
+		{
+			"Id": "ParamGroupOverall",
+			"GroupId": "",
+			"Name": "整体"
+		},
+		{
+			"Id": "ParamGroupSway",
+			"GroupId": "",
+			"Name": "晃动"
+		},
+		{
+			"Id": "ParamGroupHeart",
+			"GroupId": "",
+			"Name": "爱心"
+		},
+		{
+			"Id": "ParamGroupInk",
+			"GroupId": "",
+			"Name": "墨水"
+		},
+		{
+			"Id": "ParamGroupExplosion",
+			"GroupId": "",
+			"Name": "爆炸"
+		},
+		{
+			"Id": "ParamGroupRabbit",
+			"GroupId": "",
+			"Name": "兔子"
+		},
+		{
+			"Id": "ParamGroupAura",
+			"GroupId": "",
+			"Name": "光环"
+		},
+		{
+			"Id": "ParamGroupLight",
+			"GroupId": "",
+			"Name": "光"
+		},
+		{
+			"Id": "ParamGroupAllEffects",
+			"GroupId": "",
+			"Name": "整体效果"
+		},
+		{
+			"Id": "ParamGroupColorSample",
+			"GroupId": "",
+			"Name": "乘法色、屏幕色样本"
+		}
+	],
+	"Parts": [
+		{
+			"Id": "PartCore",
+			"Name": "核心"
+		},
+		{
+			"Id": "PartRabbit",
+			"Name": "兔子"
+		},
+		{
+			"Id": "PartEffect",
+			"Name": "效果"
+		},
+		{
+			"Id": "PartInk",
+			"Name": "墨水"
+		},
+		{
+			"Id": "PartSmoke",
+			"Name": "烟雾"
+		},
+		{
+			"Id": "PartExplosionLight",
+			"Name": "爆炸光"
+		},
+		{
+			"Id": "Partaura",
+			"Name": "光环"
+		},
+		{
+			"Id": "PartLight",
+			"Name": "光"
+		},
+		{
+			"Id": "PartHeart",
+			"Name": "爱心"
+		},
+		{
+			"Id": "PartHat",
+			"Name": "帽子"
+		},
+		{
+			"Id": "PartHairSide",
+			"Name": "侧发"
+		},
+		{
+			"Id": "PartHairFront",
+			"Name": "刘海"
+		},
+		{
+			"Id": "PartHairBack",
+			"Name": "后发"
+		},
+		{
+			"Id": "PartBrow",
+			"Name": "眉毛"
+		},
+		{
+			"Id": "PartEye",
+			"Name": "眼睛"
+		},
+		{
+			"Id": "PartCheek",
+			"Name": "脸颊"
+		},
+		{
+			"Id": "PartNose",
+			"Name": "鼻子"
+		},
+		{
+			"Id": "PartMouth",
+			"Name": "嘴"
+		},
+		{
+			"Id": "PartFace",
+			"Name": "脸"
+		},
+		{
+			"Id": "PartEar",
+			"Name": "耳朵"
+		},
+		{
+			"Id": "PartNeck",
+			"Name": "脖子"
+		},
+		{
+			"Id": "PartRobe",
+			"Name": "长袍"
+		},
+		{
+			"Id": "PartHoodie",
+			"Name": "连帽衫"
+		},
+		{
+			"Id": "PartLeg",
+			"Name": "腿"
+		},
+		{
+			"Id": "PartArmLA",
+			"Name": "左腕A"
+		},
+		{
+			"Id": "PartArmRA",
+			"Name": "右腕A"
+		},
+		{
+			"Id": "PartArmLB",
+			"Name": "左腕B"
+		},
+		{
+			"Id": "PartArmRB",
+			"Name": "右腕B"
+		},
+		{
+			"Id": "PartColorSample",
+			"Name": "乘法色、屏幕色样本"
+		},
+		{
+			"Id": "PartSketch",
+			"Name": "[ 草图 ]"
+		},
+		{
+			"Id": "PartEyeBall",
+			"Name": "眼球"
+		},
+		{
+			"Id": "PartWandA",
+			"Name": "法杖A"
+		},
+		{
+			"Id": "PartWandB",
+			"Name": "法杖B"
+		}
+	],
+	"CombinedParameters": [
+		[
+			"ParamAngleX",
+			"ParamAngleY"
+		],
+		[
+			"ParamAllX",
+			"ParamAllY"
+		],
+		[
+			"ParamMagicPositionX",
+			"ParamMagicPositionY"
+		]
+	]
+}
