@@ -3,6 +3,7 @@ import { Button, Select } from 'antd';
 import { useMouth } from './hooks';
 import { Emotions, Live2dModelPageUrl, MaoExps, type EmotionType, type MaoExpType } from './common';
 import Chats from './Chats';
+import { DynamicExpression } from './DynamicExpression';
 
 const Live2DTest = () => {
   const ref = useRef<HTMLIFrameElement>(null);
@@ -44,6 +45,7 @@ const Live2DTest = () => {
         }}
       />
       <div className="flex flex-col p-4 flex-1">
+        <DynamicExpression onClick={sendMessage} />
         <div className="flex flex-col gap-2">
           <div>控制所有表情</div>
           <div className="flex flex-row gap-2">

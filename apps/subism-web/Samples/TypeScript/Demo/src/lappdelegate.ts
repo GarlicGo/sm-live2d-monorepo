@@ -97,9 +97,39 @@ export class LAppDelegate {
   }
 
   private onMessage(e: MessageEvent): void {
+    console.log('onMessage', { e });
     const data = e.data as {
       type?: string;
       exp?: string;
+      motionGroup?: string;
+      motionNo?: number;
+      priority?: number;
+      parameters?: Array<{ id: string; value: number; weight?: number }>;
+      dynamicExpression?: {
+        name?: string;
+        parameters: Array<{
+          id: string;
+          value: number;
+          blendType?: 'Add' | 'Multiply' | 'Overwrite';
+        }>;
+        fadeInTime?: number;
+        fadeOutTime?: number;
+      };
+      dynamicMotion?: {
+        name?: string;
+        duration?: number;
+        fps?: number;
+        loop?: boolean;
+        fadeInTime?: number;
+        fadeOutTime?: number;
+        curves: Array<{
+          target: 'Parameter' | 'PartOpacity' | 'Model';
+          id: string;
+          segments: number[];
+          fadeInTime?: number;
+          fadeOutTime?: number;
+        }>;
+      };
     };
     const type = data?.type;
     const subdelegate = this._subdelegates.at(0);
@@ -109,6 +139,22 @@ export class LAppDelegate {
     if (type === 'live2d-exp-control') {
       const exp = data?.exp;
       model.setExpression(exp);
+    } else if (type === 'live2d-motion-control') {
+      const motionGroup = data?.motionGroup;
+      const motionNo = data?.motionNo;
+      const priority = data?.priority ?? LAppDefine.PriorityNormal;
+
+      if (motionGroup !== undefined && motionNo !== undefined) {
+        model.startMotion(motionGroup, motionNo, priority);
+      } else if (motionGroup !== undefined) {
+        model.startRandomMotion(motionGroup, priority);
+      }
+    } else if (type === 'live2d-dynamic-exp') {
+      // 动态表情控制
+      const dynamicExp = data?.dynamicExpression;
+      if (dynamicExp && dynamicExp.parameters) {
+        model.setDynamicExpression(dynamicExp);
+      }
     }
   }
 

@@ -932,6 +932,69 @@ export class LAppModel extends CubismUserModel {
   }
 
   /**
+   * 设置动态表情（类似 expression 文件的结构）
+   * @param dynamicExp 动态表情配置
+   */
+  public setDynamicExpression(dynamicExp: {
+    name?: string;
+    parameters: Array<{
+      id: string;
+      value: number;
+      blendType?: 'Add' | 'Multiply' | 'Overwrite';
+    }>;
+    fadeInTime?: number;
+    fadeOutTime?: number;
+  }): void {
+    console.log('setDynamicExpression');
+    if (!this._model) {
+      CubismLogError('Model is not loaded yet.');
+      return;
+    }
+
+    // 创建一个临时的表情数据结构
+    const expData = {
+      Type: 'Live2D Expression',
+      FadeInTime: dynamicExp.fadeInTime || 0.5,
+      FadeOutTime: dynamicExp.fadeOutTime || 0.5,
+      Parameters: dynamicExp.parameters.map(p => ({
+        Id: p.id,
+        Value: p.value,
+        Blend: p.blendType || 'Add'
+      }))
+    };
+
+    // 将对象转换为 JSON 字符串，再转换为 ArrayBuffer
+    const jsonString = JSON.stringify(expData);
+    const encoder = new TextEncoder();
+    const arrayBuffer = encoder.encode(jsonString).buffer;
+
+    // 使用现有的 loadExpression 方法加载
+    const expressionName = dynamicExp.name || `dynamic_exp_${Date.now()}`;
+    const motion = this.loadExpression(
+      arrayBuffer,
+      arrayBuffer.byteLength,
+      expressionName
+    );
+
+    if (motion) {
+      // 删除旧的同名表情
+      if (this._expressions.getValue(expressionName) != null) {
+        ACubismMotion.delete(this._expressions.getValue(expressionName));
+      }
+
+      // 保存并设置新表情
+      this._expressions.setValue(expressionName, motion);
+      this.setExpression(expressionName);
+
+      if (this._debugMode) {
+        LAppPal.printMessage(
+          `[APP]Set dynamic expression: ${expressionName} with ${dynamicExp.parameters.length} parameters.`
+        );
+      }
+    }
+  }
+
+  /**
    * コンストラクタ
    */
   public constructor() {
